@@ -1,0 +1,66 @@
+GradeSense - Commands to Run the Project
+=========================================
+
+PREREQUISITES
+-------------
+- Python 3.10+ (tested on 3.13)
+- Node.js 18+ and npm (tested on v22.14.0)
+- Windows (start.bat is provided; manual commands work cross-platform)
+
+INSTALLATION
+------------
+1. Install Python dependencies (root)
+   pip install -r requirements.txt
+
+2. Install backend dependencies (optional if root covers them)
+   pip install -r backend/requirements.txt
+
+3. Install frontend dependencies
+   cd frontend
+   npm install
+   cd ..
+
+TRAINING & ARTIFACTS (if models/outputs missing)
+-----------------------------------------------
+1. Train models and generate figures
+   python src/train_models.py
+
+2. Run error diagnostics and residual analysis
+   python src/evaluate_models.py
+
+3. Generate reports (PDF, DOCX, PPTX)
+   python src/generate_reports.py
+
+4. Generate Jupyter Notebook
+   python scripts/make_notebook.py
+
+RUNNING THE APPLICATION
+-----------------------
+Option 1: Automated (Windows)
+   start.bat
+
+Option 2: Manual
+   Terminal 1 - Backend API
+   python -m uvicorn app.main:app --app-dir backend --host 127.0.0.1 --port 8000 --reload
+   
+   Terminal 2 - Frontend Dashboard
+   cd frontend
+   npm run dev
+
+ACCESS POINTS
+-------------
+- Frontend: http://localhost:5173
+- Backend API: http://localhost:8000
+- API Docs (Swagger): http://localhost:8000/docs
+- API Redoc: http://localhost:8000/redoc
+
+TESTING
+-------
+Run all backend tests
+   python -m pytest backend/tests/ -v
+
+TROUBLESHOOTING
+---------------
+- If ports are in use, change ports in start.bat or uvicorn/vite config
+- If models missing: run training commands above
+- If dataset missing: place student-mat.csv in data/raw/ or run python src/data_preprocessing.py
