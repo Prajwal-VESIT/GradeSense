@@ -1,0 +1,122 @@
+{
+  "early_performance": {
+    "best_model": "RandomForest",
+    "model_path": "D:\\VESIT\\SEM_VII\\DS\\GradeSense\\models\\early_performance_model.joblib",
+    "models": {
+      "DummyRegressor": {
+        "cv_MAE": 3.3883,
+        "cv_MSE": 21.0649,
+        "cv_R2": -0.0086,
+        "test_MAE": 3.6459,
+        "test_MSE": 20.7041,
+        "test_RMSE": 4.5502,
+        "test_R2": -0.0097
+      },
+      "LinearRegression": {
+        "cv_MAE": 3.5757,
+        "cv_MSE": 22.1272,
+        "cv_R2": -0.0781,
+        "test_MAE": 3.3953,
+        "test_MSE": 17.6037,
+        "test_RMSE": 4.1957,
+        "test_R2": 0.1415
+      },
+      "Ridge": {
+        "cv_MAE": 3.5572,
+        "cv_MSE": 21.8979,
+        "cv_R2": -0.0666,
+        "test_MAE": 3.3929,
+        "test_MSE": 17.5846,
+        "test_RMSE": 4.1934,
+        "test_R2": 0.1424
+      },
+      "RandomForest": {
+        "cv_MAE": 2.9087,
+        "cv_MSE": 15.1968,
+        "cv_R2": 0.2678,
+        "test_MAE": 3.0022,
+        "test_MSE": 14.203,
+        "test_RMSE": 3.7687,
+        "test_R2": 0.3073
+      },
+      "GradientBoosting": {
+        "cv_MAE": 3.1171,
+        "cv_MSE": 16.4296,
+        "cv_R2": 0.2069,
+        "test_MAE": 3.1111,
+        "test_MSE": 15.4917,
+        "test_RMSE": 3.9359,
+        "test_R2": 0.2445
+      },
+      "HistGradientBoosting": {
+        "cv_MAE": 3.1636,
+        "cv_MSE": 16.7079,
+        "cv_R2": 0.1995,
+        "test_MAE": 3.1902,
+        "test_MSE": 15.7144,
+        "test_RMSE": 3.9641,
+        "test_R2": 0.2336
+      }
+    }
+  },
+  "grade_assisted": {
+    "best_model": "RandomForest",
+    "model_path": "D:\\VESIT\\SEM_VII\\DS\\GradeSense\\models\\grade_assisted_model.joblib",
+    "models": {
+      "DummyRegressor": {
+        "cv_MAE": 3.3883,
+        "cv_MSE": 21.0649,
+        "cv_R2": -0.0086,
+        "test_MAE": 3.6459,
+        "test_MSE": 20.7041,
+        "test_RMSE": 4.5502,
+        "test_R2": -0.0097
+      },
+      "LinearRegression": {
+        "cv_MAE": 1.3369,
+        "cv_MSE": 3.6355,
+        "cv_R2": 0.8263,
+        "test_MAE": 1.6467,
+        "test_MSE": 5.6566,
+        "test_RMSE": 2.3784,
+        "test_R2": 0.7241
+      },
+      "Ridge": {
+        "cv_MAE": 1.3298,
+        "cv_MSE": 3.6143,
+        "cv_R2": 0.8274,
+        "test_MAE": 1.6391,
+        "test_MSE": 5.6242,
+        "test_RMSE": 2.3715,
+        "test_R2": 0.7257
+      },
+      "RandomForest": {
+        "cv_MAE": 0.9067,
+        "cv_MSE": 2.0123,
+        "cv_R2": 0.905,
+        "test_MAE": 1.2138,
+        "test_MSE": 4.0354,
+        "test_RMSE": 2.0088,
+        "test_R2": 0.8032
+      },
+      "GradientBoosting": {
+        "cv_MAE": 0.975,
+        "cv_MSE": 2.2107,
+        "cv_R2": 0.8956,
+        "test_MAE": 1.1526,
+        "test_MSE": 3.9318,
+        "test_RMSE": 1.9829,
+        "test_R2": 0.8083
+      },
+      "HistGradientBoosting": {
+        "cv_MAE": 1.0609,
+        "cv_MSE": 2.2327,
+        "cv_R2": 0.8937,
+        "test_MAE": 1.2321,
+        "test_MSE": 3.7435,
+        "test_RMSE": 1.9348,
+        "test_R2": 0.8174
+      }
+    }
+  }
+}

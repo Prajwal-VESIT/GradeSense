@@ -1,0 +1,84 @@
+{
+  "early_performance": {
+    "model": "RandomForest",
+    "test_metrics": {
+      "MAE": 3.0022,
+      "MSE": 14.203,
+      "RMSE": 3.7687,
+      "R2": 0.3073
+    },
+    "error_by_range": [
+      {
+        "grade_range": "0-5 (Fail)",
+        "count": 9,
+        "mean_abs_error": 6.124444444444444,
+        "std_abs_error": 3.173421304803032,
+        "mean_residual": -6.124444444444444
+      },
+      {
+        "grade_range": "6-10 (Low)",
+        "count": 29,
+        "mean_abs_error": 2.4972413793103447,
+        "std_abs_error": 1.784116220893463,
+        "mean_residual": -2.3241379310344827
+      },
+      {
+        "grade_range": "11-15 (Mid)",
+        "count": 31,
+        "mean_abs_error": 1.9948387096774192,
+        "std_abs_error": 1.4257135546051831,
+        "mean_residual": 1.8735483870967742
+      },
+      {
+        "grade_range": "16-20 (High)",
+        "count": 10,
+        "mean_abs_error": 4.779,
+        "std_abs_error": 1.5343290245431567,
+        "mean_residual": 4.779
+      }
+    ],
+    "large_error_count": 31,
+    "large_error_threshold": 3.0
+  },
+  "grade_assisted": {
+    "model": "RandomForest",
+    "test_metrics": {
+      "MAE": 1.2138,
+      "MSE": 4.0354,
+      "RMSE": 2.0088,
+      "R2": 0.8032
+    },
+    "error_by_range": [
+      {
+        "grade_range": "0-5 (Fail)",
+        "count": 9,
+        "mean_abs_error": 2.97,
+        "std_abs_error": 2.8183062289254512,
+        "mean_residual": -2.97
+      },
+      {
+        "grade_range": "6-10 (Low)",
+        "count": 29,
+        "mean_abs_error": 1.3786206896551725,
+        "std_abs_error": 1.7634356161804696,
+        "mean_residual": 0.7006896551724137
+      },
+      {
+        "grade_range": "11-15 (Mid)",
+        "count": 31,
+        "mean_abs_error": 0.7051612903225807,
+        "std_abs_error": 0.6303166980058091,
+        "mean_residual": 0.2993548387096775
+      },
+      {
+        "grade_range": "16-20 (High)",
+        "count": 10,
+        "mean_abs_error": 0.7319999999999995,
+        "std_abs_error": 0.3305819784023992,
+        "mean_residual": 0.09799999999999986
+      }
+    ],
+    "large_error_count": 6,
+    "large_error_threshold": 3.0
+  }
+}
